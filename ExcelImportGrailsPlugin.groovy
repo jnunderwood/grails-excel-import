@@ -26,8 +26,8 @@ class ExcelImportGrailsPlugin {
         	[ name: "Oleksiy Symonenko", email: "" ],
 	]
 
-	def issueManagement = [ system: "JIRA", url: "http://jira.grails.org/browse/GPXLIMPORT" ]
-	def scm = [ url: "https://github.com/jbarmash/grails-excel-import" ]
+	def issueManagement = [ system: "GITHUB", url: "https://github.com/gpc/grails-excel-import/issues" ]
+	def scm = [ url: "https://github.com/gpc/grails-excel-import" ]
     // URL to the plugin's documentation
     def documentation = "http://grails.org/plugin/excel-import"
 
