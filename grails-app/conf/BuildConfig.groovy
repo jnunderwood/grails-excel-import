@@ -38,5 +38,7 @@ grails.project.dependency.resolution = {
 	plugins {
 		build ":release:3.0.1"
 		build ":tomcat:7.0.53"
+
+		compile ':joda-time:1.3.1'
 	}
 }
