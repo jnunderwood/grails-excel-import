@@ -1,1 +1,5 @@
+.idea
 target
+*.zip
+*.iml
+plugin.xml
