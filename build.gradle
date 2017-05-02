@@ -50,10 +50,10 @@ dependencies {
     testCompile "org.grails:grails-plugin-testing"
 
     compile 'org.grails.plugins:joda-time:2.0.0'
-    compile 'org.apache.poi:poi:3.8'
+    compile 'org.apache.poi:poi:3.16'
 
     //xlxs file support
-    compile 'org.apache.poi:poi-ooxml:3.8'
+    compile 'org.apache.poi:poi-ooxml:3.16'
     compile 'org.apache.xmlbeans:xmlbeans:2.6.0'
 }
 
