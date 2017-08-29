@@ -1,0 +1,8 @@
+apply plugin: 'erst-release'
+
+buildscript {
+    dependencies {
+        classpath 'erst-release:erst-release-plugin:3.14.0'
+    }
+}
+
