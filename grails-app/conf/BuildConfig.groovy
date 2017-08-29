@@ -22,6 +22,7 @@ grails.project.dependency.resolution = {
 		compile(group: 'org.apache.poi', name: 'poi-ooxml', version: '3.16') {
 			excludes 'xmlbeans'
 		}
+		compile 'org.apache.poi:ooxml-schemas:1.3'
 		//compile group:'org.apache.poi', name:'poi-contrib', version:'3.7'
 		//compile group:'org.apache.poi', name:'poi-scratchpad', version:'3.7' //ppt, word, visio, outlook support
 	}
