@@ -1,0 +1,36 @@
+# Eclipse IDE
+.classpath
+.project
+.settings
+.link_to_grails_plugins
+
+# IntelliJ
+.idea
+*.iml
+*.bytes
+.slcache/.index
+
+# Build output
+.gradle
+build
+classes
+bin
+out
+target
+target-eclipse
+*.zip
+*.sha1
+*.ser
+*.log
+plugin.xml
+
+# OS files
+.DS_Store
+.DS_Store?
+
+
+
+web-apptextmanager-config.groovy
+web-app/textmanager-config.groovy
+*.ipr
+*.iws

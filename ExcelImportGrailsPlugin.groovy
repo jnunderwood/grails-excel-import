@@ -9,6 +9,7 @@ class ExcelImportGrailsPlugin {
     def pluginExcludes = [
             "grails-app/views/error.gsp"
     ]
+    String groupId = 'er3'
 
     // TODO Fill in these fields
     def author = "Jean Barmash, Oleksiy Symonenko"

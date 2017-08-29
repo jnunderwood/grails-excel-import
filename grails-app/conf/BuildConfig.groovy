@@ -11,17 +11,8 @@ grails.project.dependency.resolution = {
 
 	log "warn" // log level of Ivy resolver, either 'error', 'warn', 'info', 'debug' or 'verbose'
 	repositories {
-		grailsPlugins()
-		grailsHome()
-
-		// uncomment the below to enable remote dependency resolution
-		// from public Maven repositories
-		mavenLocal()
-		mavenCentral()
-		//mavenRepo "http://snapshots.repository.codehaus.org"
-		//mavenRepo "http://repository.codehaus.org"
-		//mavenRepo "http://download.java.net/maven/2/"
-		//mavenRepo "http://repository.jboss.com/maven2/"
+        mavenRepo name: "erst-repository", root: "https://dev.erst.dk/artifactory/erst-repository"
+        mavenLocal()
 	}
 
 	dependencies {
@@ -39,8 +30,10 @@ grails.project.dependency.resolution = {
 		build ":release:3.0.1"
 		build ":tomcat:7.0.53"
 
-		compile ':hibernate:3.6.10.15' {
+		compile(":hibernate:3.6.10.15") {
 			export = false
 		}
 	}
 }
+
+grails.project.repos.default = "erstcomponents"
