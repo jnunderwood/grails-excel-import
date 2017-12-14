@@ -2,6 +2,7 @@ language: groovy
 sudo: false
 jdk:
 - openjdk7
+dist: precise
 before_script:
 - rm -rf target
 script: ./travis-build.sh
