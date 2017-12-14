@@ -3,6 +3,10 @@ sudo: false
 jdk:
 - openjdk7
 dist: precise
+addons:
+  hosts:
+    - gpcbuild
+  hostname: gpcbuild
 before_script:
 - rm -rf target
 script: ./travis-build.sh
