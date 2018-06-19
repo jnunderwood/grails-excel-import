@@ -28,7 +28,8 @@ It's useful for either bootstrapping data, or when you want to allow your users 
 
     // Any additional developers beyond the author specified above.
     def developers = [
-            [ name: 'Jeff Scott Brown', email: 'brownj@ociweb.com']
+            [ name: 'Jeff Scott Brown', email: 'brownj@ociweb.com'],
+            [ name: 'Jean Barmash', email: "Jean.Barmash@gmail.com"]
     ]
 
     def issueManagement = [ system: "GITHUB", url: "https://github.com/gpc/grails-excel-import/issues" ]

@@ -13,7 +13,7 @@ class BookImporter extends AbstractExcelImporter {
     @Autowired
     ExcelImportService excelImportService
 
-    static Map configuratiomMap = [
+    static Map configurationMap = [
             dateIssued: ([expectedType: DateType, defaultValue: null]),
             dateIssuedError: ([expectedType: DateType, defaultValue: null]),
             numSold: ([expectedType: IntType, defaultValue: 1, severityMapping: ImportSeverityMappingEnum.ErrorAll, userViewableName:'Quantity']),
@@ -45,7 +45,7 @@ class BookImporter extends AbstractExcelImporter {
                 workbook,
                 CONFIG_BOOK_COLUMN_MAP,
                 cellReporter,
-                configuratiomMap
+                configurationMap
         )
     }
 
@@ -57,7 +57,7 @@ class BookImporter extends AbstractExcelImporter {
                 bookList,
                 workbook,
                 CONFIG_BOOK_COLUMN_MAP,
-                configuratiomMap
+                configurationMap
         )
     }
 
@@ -67,7 +67,7 @@ class BookImporter extends AbstractExcelImporter {
                 workbook,
                 CONFIG_BOOK_CELL_MAP,
                 cellReporter,
-                configuratiomMap
+                configurationMap
         )
     }
 
@@ -79,7 +79,7 @@ class BookImporter extends AbstractExcelImporter {
                 bookParams,
                 workbook,
                 CONFIG_BOOK_CELL_MAP,
-                configuratiomMap
+                configurationMap
         )
     }
 
