@@ -30,6 +30,7 @@ dependencies {
     compile "org.grails:grails-web-boot"
     console "org.grails:grails-console"
     profile "org.grails.profiles:web-plugin"
+    provided "org.grails:grails-logging"
     provided "org.grails:grails-plugin-services"
     testCompile "org.grails:grails-plugin-testing"
     testCompile "org.grails:grails-web-testing-support"
