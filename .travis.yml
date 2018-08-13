@@ -1,9 +1,8 @@
 language: groovy
 sudo: false
 jdk:
-- oraclejdk7
-#- openjdk7
-# dist: precise
+- openjdk7
+dist: precise
 addons:
   hosts:
     - gpcbuild
