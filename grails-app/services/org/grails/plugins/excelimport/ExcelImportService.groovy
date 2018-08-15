@@ -2,7 +2,6 @@ package org.grails.plugins.excelimport
 
 import static org.grails.plugins.excelimport.ExpectedPropertyType.*
 
-import grails.util.Holders
 import org.apache.commons.validator.routines.EmailValidator
 import org.apache.poi.ss.usermodel.*
 import org.apache.poi.ss.util.CellReference

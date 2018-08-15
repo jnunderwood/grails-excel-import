@@ -9,7 +9,7 @@ buildscript {
     }
 }
 
-version "3.0.0"
+version "3.0.1"
 group "org.grails.plugins"
 
 apply plugin:"eclipse"
@@ -44,6 +44,8 @@ dependencies {
     compile 'org.apache.poi:poi-ooxml:3.17'
     compile 'org.apache.xmlbeans:xmlbeans:2.6.0'
 }
+
+bootRepackage.enabled = false
 
 grailsPublish {
     userOrg = 'grails'
