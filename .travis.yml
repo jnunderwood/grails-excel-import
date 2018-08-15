@@ -1,5 +1,9 @@
 language: groovy
 sudo: false
+cache:
+  directories:
+  - $HOME/.gradle/caches/
+  - $HOME/.gradle/wrapper/
 jdk:
 - openjdk7
 dist: precise
@@ -8,7 +12,7 @@ addons:
     - gpcbuild
   hostname: gpcbuild
 before_script:
-- rm -rf target
+- rm -rf build
 script: ./travis-build.sh
 env:
   global:

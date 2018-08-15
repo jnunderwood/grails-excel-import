@@ -155,6 +155,8 @@ _Note_: Apache POI 3.6 Supports Excel 2007 Files, but I haven't tested those.
 The plugin is licensed under Apache V2.
 
 ### Release History: 
+* August 15th, 2018 - Release 3.0.2
+  - No code changes, but fixed that 3.0.0 was build as a fat jar (boot repackaged)
 * August 13th, 2018 - Release 3.0.0, and 3.1.0.BUILD-SNAPSHOT
 * June 19th, 2018 - Grails 3.3.x RC7 release
 * June 21st, 2010 - Initial Release
