@@ -53,15 +53,18 @@ public abstract class AbstractExcelImporter extends imexporter.AbstractImexporte
 		return this
 	}
 
-	def evaluateAllFormulaCells() {
+	def evaluateAllFormulaCells(boolean inCell = false) {
 		for(int sheetNum = 0; sheetNum < workbook.getNumberOfSheets(); sheetNum++) {
 			def sheet = workbook.getSheetAt(sheetNum);
 			for(def r : sheet) {
 				for(def c : r) {
-					if(c.getCellType() == Cell.CELL_TYPE_FORMULA) {
-//						if(c.getCellValue()==null || c.getCellValue() == '' || c.getCellValue() == 0){
+					if(c.getCellType() == CellType.FORMULA) {
+ 						if(inCell) {
+							evaluator.evaluateInCell(c);
+ 						}
+ 						else {
 							evaluator.evaluateFormulaCell(c);
-//						}
+ 						}
 					}
 				}
 			}
